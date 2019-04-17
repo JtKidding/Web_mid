@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+h3
+{
+    color: white;
+}
+
+/*body*/
+body
+{
+    width: 1024px;
+    height: 1900px;
+    font-family: "Arial Black";
+    font-size: 16px;
+    display: flex;
+    background-image: url('../img/SCP-106.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    margin: 0 auto;
+    padding:0px;
+    
+}
+
+.container
+{
+    margin: 0 60px;
+    padding: 40px 0 0 0;
+}
+
+/*header*/
+.header
+{
+    display: flex;
+    align-items: flex-start;
+
+}
+.header_logo
+{
+    width: 95px;
+    height: 95px;
+}
+.header_word
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 30px;
+}
+.header_word_title
+{
+    font-size: 46px;
+}
+.header_word_supplement
+{
+    font-size: 13px;
+}
+
+/*dividing_line*/
+.dividing_line
+{
+    width: 1000px;
+    height: 1px;
+    margin: 25px 0;
+    background-color: white;
+}
+.alert_text
+{
+    font-family: "ArialMT Regular", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color:white;
+}
+.alert
+{
+    font-family: "ArialMT Regular", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color:red;
+    
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(119, 138, 80);
+    border-image: initial;
+    border-radius: 5px;
+    font-family: "Arial BoldMT", sans-serif;
+    color:white;
+    margin-top: 20px;
+    padding: 10px 15px;
+}

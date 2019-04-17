@@ -6,10 +6,12 @@
 /*body*/
 body
 {
-    width: 1025px;
+    width: 1024px;
     height: 1900px;
     font-family: "Arial Black";
     font-size: 16px;
+    display: flex;
+    margin: 0 auto;
     background-color: black;
 }
 
@@ -52,7 +54,7 @@ body
 /*dividing_line*/
 .dividing_line
 {
-    width: 905px;
+    width: 1000px;
     height: 1px;
     margin: 25px 0;
     background-color: white;
@@ -74,6 +76,8 @@ body
 }
 .navi_SCP_series li
 {
+    width:150px;
+    text-align:center;
     position: relative;
     white-space: nowrap;
     border-right: white 1px solid;
