@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/Level.css">
+        <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
         <title>Level</title>
     </head>
     
@@ -50,7 +51,7 @@
             <div class = "dividing_line">
             </div>
             
-            <div class = "SCP_title">
+            <div class = "SCP_title" id = "SCP_title">
                 <p>SCP危險分級</p>
             </div>
 
@@ -58,7 +59,7 @@
             </div>
 
             <div class = "SCP">
-                <div class = "SCP_title">
+                <div class = "SCP_title" id = "SCP_title1">
                     <p>Safe</p>
                 </div>
 
@@ -72,7 +73,7 @@
                 <div class = "dividing_line set2">
                 </div>
 
-                <div class = "SCP_title">
+                <div class = "SCP_title" id = "SCP_title2">
                     <p>Euclid</p>
                 </div>
 
@@ -87,7 +88,7 @@
                 <div class = "dividing_line set2">
                 </div>
 
-                <div class = "SCP_title">
+                <div class = "SCP_title" id = "SCP_title3">
                     <p>Keter</p>
                 </div>
 
@@ -101,7 +102,7 @@
                 <div class = "dividing_line set2">
                 </div>
 
-                <div class = "SCP_title">
+                <div class = "SCP_title" id = "SCP_title4">
                     <p>Thaumiel</p>
                 </div>
 
@@ -115,7 +116,7 @@
                 <div class = "dividing_line set2">
                 </div>
 
-                <div class = "SCP_title">
+                <div class = "SCP_title" id = "SCP_title5">
                     <p>無效化（Neutralized）</p>
                 </div>
 
@@ -140,6 +141,56 @@
             </footer> 
 
         </div>
+
+        <script>
+        $(document).ready(function(){
+           $(window).on('scroll',function(){
+               var b=$(window).scrollTop();//获取滚动的高度
+               var a=$("#SCP_title").offset().top;
+               var a1=$("#SCP_title1").offset().top;//获取元素距离顶部的距离
+               var a2=$("#SCP_title2").offset().top;//获取元素距离顶部的距离
+               var a3=$("#SCP_title3").offset().top;//获取元素距离顶部的距离
+               var a4=$("#SCP_title4").offset().top;//获取元素距离顶部的距离
+               var a5=$("#SCP_title5").offset().top;//获取元素距离顶部的距离
+               if(a-400<b){
+                $("#SCP_title").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+               if(a1-400<b){
+                   $("#SCP_title1").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+               if(a2-400<b){
+                   $("#SCP_title2").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+               if(a3-400<b){
+                   $("#SCP_title3").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+               if(a4-400<b){
+                   $("#SCP_title4").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+               if(a5-600<b){
+                   $("#SCP_title5").animate({//标题动画
+                     left:'350px',              
+                     opacity:'1',
+                   },'slow');
+               }
+           });
+       });
+       </script>
 
     </body>
 

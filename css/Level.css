@@ -136,6 +136,8 @@ body
 /*SCP*/
 .SCP_title
 {
+    opacity: 0;
+    word-break: break-all;
     color: white;
     font-size: 30px;
     margin-left: 10px;
