@@ -3,6 +3,17 @@
     margin: 0px;
     vertical-align: middle;
 }
+
+#top-bar{
+    width:100%;
+    padding-top:40px;
+    background: black;
+    height:240px;
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
+
 /*body*/
 body
 {
