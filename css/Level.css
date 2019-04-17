@@ -3,11 +3,21 @@
     margin: 0px;
     vertical-align: middle;
 }
+
+#top-bar{
+    width:100%;
+    padding-top:40px;
+    background: black;
+    height:240px;
+    position:fixed;
+    top:0px;
+}
+
 /*body*/
 body
 {
     width: 1024px;
-    height: 1400px;
+    height: 1600px;
     font-family: "Arial Black";
     font-size: 16px;
     display: flex;
@@ -136,8 +146,6 @@ body
 /*SCP*/
 .SCP_title
 {
-    opacity: 0;
-    word-break: break-all;
     color: white;
     font-size: 30px;
     margin-left: 10px;
@@ -160,10 +168,14 @@ body
     display: flex;
     position: fixed;
     bottom: 0;
-    background: white;
-    border: 5px gray solid;
+    background: gray;
     border-bottom: 0;
-    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(65, 60, 60, 0.74);
+    border-radius: 5px;
+    margin-left: 60px;
+    height: 40px;
     width: 994px;
     align-items: center;
     justify-content: space-between;

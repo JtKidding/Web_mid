@@ -3,6 +3,17 @@
     margin: 0px;
     vertical-align: middle;
 }
+
+#top-bar{
+    width:100%;
+    padding-top:40px;
+    background: black;
+    height:240px;
+    position:fixed;
+    top:0px;
+}
+
+
 /*body*/
 body
 {
@@ -159,7 +170,7 @@ body
 }
 .part2
 {
-    font-size: 17px;
+    font-size: 16px;
     width: 400px;
     margin-top: 40px;
     margin-left: 50px;
@@ -170,10 +181,14 @@ body
     display: flex;
     position: fixed;
     bottom: 0;
-    background: white;
-    border: 5px gray solid;
+    background: gray;
     border-bottom: 0;
-    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(65, 60, 60, 0.74);
+    border-radius: 5px;
+    margin-left: 60px;
+    height: 40px;
     width: 994px;
     align-items: center;
     justify-content: space-between;

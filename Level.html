@@ -6,193 +6,141 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/Level.css">
-        <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
         <title>Level</title>
     </head>
     
     <body>
         <div class = "container">
-            <header class = "header">
-                <div class= "header_logo">
-                    <a href = "./Home.html"><img src = "./img/Home/SCP_logo.png" width= "95" height= "95"></a>
-                </div>
-                <div class = "header_word">
-                        <div class = "header_word_title">
-                                <p">SCP基金會</p>
-                        </div>
-                        <div class = "header_word_supplement">
-                            <p">控制．收容．保護</p>
-                        </div>
-                </div>
-            </header>
+            <div id="top-bar">
+                <header class = "header">
+                    <div class= "header_logo">
+                        <a href = "./Home.html"><img src = "./img/Home/SCP_logo.png" width= "95" height= "95"></a>
+                    </div>
+                    <div class = "header_word">
+                            <div class = "header_word_title">
+                                    <p">SCP基金會</p>
+                            </div>
+                            <div class = "header_word_supplement">
+                                <p">控制．收容．保護</p>
+                            </div>
+                    </div>
+                </header>
 
-            <div class = "dividing_line">
-            </div>
-
-            <div class = "navi">
-                <ui class = "navi_SCP_series" style="margin-left:250px">
-                    <li><a href = "./Home.html">首頁</a>
-                    </li>
-                    <li><a href = "./Level.html">危險分級</a>
-                    </li>
-                    <li><a href = "#">SCP系列</a>
-                        <ul>
-                            <li><a href = "./SCP-134.html">SCP-134</a>
-                            </li>
-                            <li><a href = "./SCP-173.html">SCP-173</a>
-                            </li>
-                            <li><a href = "./SCP-682.html">SCP-682</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ui>
-            </div>
-
-            <div class = "dividing_line">
-            </div>
-            
-            <div class = "SCP_title" id = "SCP_title">
-                <p>SCP危險分級</p>
-            </div>
-
-            <div class = "dividing_line">
-            </div>
-
-            <div class = "SCP">
-                <div class = "SCP_title" id = "SCP_title1">
-                    <p>Safe</p>
+                <div class = "dividing_line">
                 </div>
 
-                <div class = "dividing_line set2">
-                </div>
-                
-                <article class = "SCP_level part1">
-                    Safe級SCP為容易和安全地被收容的異常。這通常是因為基金會已對該SCP進行足夠多的研究使得不需大量資源來收容，或是該異常需要特定和蓄意的激活或觸發方式。然而，分級為Safe的SCP並不代表操作或激活它時不會構成威脅。
-                </article>
-                
-                <div class = "dividing_line set2">
-                </div>
-
-                <div class = "SCP_title" id = "SCP_title2">
-                    <p>Euclid</p>
-                </div>
-
-                <div class = "dividing_line set2">
-                </div>
-                
-                <article class = "SCP_level part1">
-                    Euclid級SCP為需要更多資源來完全收容或是其收容並非總是可靠的異常。通常這是因為該SCP未能被充分理解或是本質不可預測。 Euclid是最大範圍的項目等級，且如果該SCP不易分為其他標準項目等級時，通常會被分級為此。<br><br>
-                    值得注意的是，任何自主、感知力及/或智能的SCP通常會分級為Euclid，因為它們能自主地思考或行動並帶來固有的不可預測性。
-                </article>
-                
-                <div class = "dividing_line set2">
+                <div class = "navi">
+                    <ui class = "navi_SCP_series" style="margin-left:250px">
+                        <li><a href = "./Home.html">首頁</a>
+                        </li>
+                        <li><a href = "./Level.html">危險分級</a>
+                        </li>
+                        <li><a href = "#">SCP系列</a>
+                            <ul>
+                                <li><a href = "./SCP-134.html">SCP-134</a>
+                                </li>
+                                <li><a href = "./SCP-173.html">SCP-173</a>
+                                </li>
+                                <li><a href = "./SCP-682.html">SCP-682</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ui>
                 </div>
 
-                <div class = "SCP_title" id = "SCP_title3">
-                    <p>Keter</p>
+                <div class = "dividing_line">
                 </div>
-
-                <div class = "dividing_line set2">
-                </div>
-                
-                <article class = "SCP_level part1">
-                    Keter級SCP是極難去持續或確實地收容的異常，且收容措施往往是大規模和複雜的。因為對異常沒有實質了解或缺乏技術來妥善收容或抵抗，基金會往往無法順利地收容這些SCP。一個Keter級SCP不代表SCP很危險，只是純粹地非常難以收容或是收容代價極高。
-                </article>
-                
-                <div class = "dividing_line set2">
-                </div>
-
-                <div class = "SCP_title" id = "SCP_title4">
-                    <p>Thaumiel</p>
-                </div>
-
-                <div class = "dividing_line set2">
-                </div>
-                
-                <article class = "SCP_level part1">
-                    Thaumiel級SCP為基金會用於收容或抵制其他SCP或異常現象的異常。僅存的一些Thaumiel級項目都是基金會的最高機密，而它們的位置、功能及現況只為O5議會以外的少數基金會人員所知。
-                </article>
-                
-                <div class = "dividing_line set2">
-                </div>
-
-                <div class = "SCP_title" id = "SCP_title5">
-                    <p>無效化（Neutralized）</p>
-                </div>
-
-                <div class = "dividing_line set2">
-                </div>
-                
-                <article class = "SCP_level part1">
-                    已無效化的SCP是已被有意無意地破壞或失效而不再異常的異常。
-                </article>
             </div>
             
-            <footer class = "footer">
-                <p>
-                    參考資料：<a href = "http://scp-wiki-cn.wikidot.com/">SCP基金會</a>
-                </p>
-                <p>
-                    製作者：<br>
-                            黃宥勛
-                            劉聰池
-                            高宗佑
-                </p>
-            </footer> 
+            <div style="padding-top:240px;">
+                <div class = "SCP_title">
+                    <p>SCP危險分級</p>
+                </div>
 
+                <div class = "dividing_line">
+                </div>
+
+                <div class = "SCP">
+                    <div class = "SCP_title">
+                        <p>Safe</p>
+                    </div>
+
+                    <div class = "dividing_line set2">
+                    </div>
+                    
+                    <article class = "SCP_level part1">
+                        Safe級SCP為容易和安全地被收容的異常。這通常是因為基金會已對該SCP進行足夠多的研究使得不需大量資源來收容，或是該異常需要特定和蓄意的激活或觸發方式。然而，分級為Safe的SCP並不代表操作或激活它時不會構成威脅。
+                    </article>
+                    
+                    <div class = "dividing_line set2">
+                    </div>
+
+                    <div class = "SCP_title">
+                        <p>Euclid</p>
+                    </div>
+
+                    <div class = "dividing_line set2">
+                    </div>
+                    
+                    <article class = "SCP_level part1">
+                        Euclid級SCP為需要更多資源來完全收容或是其收容並非總是可靠的異常。通常這是因為該SCP未能被充分理解或是本質不可預測。 Euclid是最大範圍的項目等級，且如果該SCP不易分為其他標準項目等級時，通常會被分級為此。<br><br>
+                        值得注意的是，任何自主、感知力及/或智能的SCP通常會分級為Euclid，因為它們能自主地思考或行動並帶來固有的不可預測性。
+                    </article>
+                    
+                    <div class = "dividing_line set2">
+                    </div>
+
+                    <div class = "SCP_title">
+                        <p>Keter</p>
+                    </div>
+
+                    <div class = "dividing_line set2">
+                    </div>
+                    
+                    <article class = "SCP_level part1">
+                        Keter級SCP是極難去持續或確實地收容的異常，且收容措施往往是大規模和複雜的。因為對異常沒有實質了解或缺乏技術來妥善收容或抵抗，基金會往往無法順利地收容這些SCP。一個Keter級SCP不代表SCP很危險，只是純粹地非常難以收容或是收容代價極高。
+                    </article>
+                    
+                    <div class = "dividing_line set2">
+                    </div>
+
+                    <div class = "SCP_title">
+                        <p>Thaumiel</p>
+                    </div>
+
+                    <div class = "dividing_line set2">
+                    </div>
+                    
+                    <article class = "SCP_level part1">
+                        Thaumiel級SCP為基金會用於收容或抵制其他SCP或異常現象的異常。僅存的一些Thaumiel級項目都是基金會的最高機密，而它們的位置、功能及現況只為O5議會以外的少數基金會人員所知。
+                    </article>
+                    
+                    <div class = "dividing_line set2">
+                    </div>
+
+                    <div class = "SCP_title">
+                        <p>無效化（Neutralized）</p>
+                    </div>
+
+                    <div class = "dividing_line set2">
+                    </div>
+                    
+                    <article class = "SCP_level part1">
+                        已無效化的SCP是已被有意無意地破壞或失效而不再異常的異常。
+                    </article>
+                </div>
+            </div>
         </div>
-
-        <script>
-        $(document).ready(function(){
-           $(window).on('scroll',function(){
-               var b=$(window).scrollTop();//获取滚动的高度
-               var a=$("#SCP_title").offset().top;
-               var a1=$("#SCP_title1").offset().top;//获取元素距离顶部的距离
-               var a2=$("#SCP_title2").offset().top;//获取元素距离顶部的距离
-               var a3=$("#SCP_title3").offset().top;//获取元素距离顶部的距离
-               var a4=$("#SCP_title4").offset().top;//获取元素距离顶部的距离
-               var a5=$("#SCP_title5").offset().top;//获取元素距离顶部的距离
-               if(a-400<b){
-                $("#SCP_title").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-               if(a1-400<b){
-                   $("#SCP_title1").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-               if(a2-400<b){
-                   $("#SCP_title2").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-               if(a3-400<b){
-                   $("#SCP_title3").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-               if(a4-400<b){
-                   $("#SCP_title4").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-               if(a5-600<b){
-                   $("#SCP_title5").animate({//标题动画
-                     left:'350px',              
-                     opacity:'1',
-                   },'slow');
-               }
-           });
-       });
-       </script>
-
+        <footer class = "footer">
+            <p>
+                參考資料：<a href = "http://scp-wiki-cn.wikidot.com/">SCP基金會</a>
+            </p>
+            <p>
+                製作者：
+                        黃宥勛
+                        劉聰池
+                        高宗佑
+            </p>
+        </footer> 
     </body>
-
-
 </html>

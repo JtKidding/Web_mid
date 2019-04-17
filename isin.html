@@ -12,7 +12,7 @@
     <div class = "container">
         <header class = "header">
             <div class= "header_logo">
-                <a href = "./home.html"><img src = "./img/Home/SCP_logo.png" width= "95" height= "95"></a>
+                <a href = "./Home.html"><img src = "./img/Home/SCP_logo.png" width= "95" height= "95"></a>
             </div>
             <div class = "header_word">
                 <div class = "header_word_title">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </header>
-
+        
         <div class = "dividing_line"></div>
 
         <div class = "alert_text">
@@ -37,9 +37,9 @@
             </p>
         </div>
         <div class= "box">
-            <p>
+            <h3>
                     通用说明：為防止SCP的資料泄漏，零份/多份偽造的掩蓋文件與一份/多份真正的SCP文件宜並儲存。所有涉及到SCP本質的文件，包括一份/多份假文件，均受模因抹殺觸媒保護，未經授權的人員查看，將立刻導致其心臟驟停死亡。除非受到████-███-██████的指令，否则將SCP的内容透漏给公眾者將被處決。
-            </p>
+            </h3>
         </div>
 
         <div class = "dividing_line"></div>
@@ -49,30 +49,37 @@
                 警告:
             </p>
         </div>
-        <div class = "alert_text">
-            <p>
+        <div>
+            <h3>
                 任何未經授權之人員訪問該文檔將立即被BERRYMAN-LANGFORD模因抹殺觸媒處決。在未接種合適模因疫苗的情況下向下滾動頁面將立刻導致心臟驟停死亡。
-            </p>
+            </h3>
         </div>
-        <div class="warn">
+
+        <div class="alert" style="font-size:80px; margin-top: 2000px;">
             <p>
                 別說我沒有警告過你
             </p>
         </div>
+
         <div class = "banana" id = "banana">
-            <img src = "./img/banana.gif" width= "1024" height= "768">
+            <img src = "./img/banana.gif" style="width: 125vmin;height: 100vmin;">
+        </div>
+
+        <div class="enterbox">
+            <a class="check box" style="margin-left:25%" href="./home.html">確定</a>
+            <a class="check box" style="margin-right:45%; width:160px;" href="./home.html">我不管，你已經拉下來了，進來吧٩(˃̶͈̀௰˂̶͈́)و</a>
         </div>
     </div>
     <script>
         $(document).ready(function(){
-           $(window).on('scroll',function(){
-               var b=$(window).scrollTop();//获取滚动的高度
-               var a=$("#banana").offset().top;//获取元素距离顶部的距离
-               if(b<a-1000 && b>4000){
+            $(window).on('scroll',function(){
+                var b=$(window).scrollTop();//获取滚动的高度
+                var a=$("#banana").offset().top;//获取元素距离顶部的距离
+                if(b<a-1000 && b>4000){
                     $('html, body').scrollTop(a);
-               }
-           });
-       });
+                }
+            });
+        });
     </script>
 </body>
 </html>

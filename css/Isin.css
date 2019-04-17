@@ -84,14 +84,6 @@ body
     color:red;
     
 }
-.warn
-{
-    font-family: "ArialMT Regular", sans-serif;
-    font-size: 80px;
-    text-align: center;
-    color:red;
-    margin-top: 2000px;
-}
 
 .box {
     display: flex;
@@ -110,4 +102,19 @@ body
 
 .banana {
     margin-top: 8000px;
+}
+
+.enterbox
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check
+{
+    width: 50px;
+    margin-top:1000px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    border-color: red;
 }
