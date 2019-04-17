@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+/*body*/
+body
+{
+    width: 1025px;
+    height: 1900px;
+    font-family: "Arial Black";
+    font-size: 16px;
+    background-color: black;
+}
+
+/*container*/
+.container
+{
+    margin: 0 60px;
+    padding: 40px 0 0 0;
+}
+
+/*header*/
+.header
+{
+    display: flex;
+    align-items: flex-start;
+
+}
+.header_logo
+{
+    width: 95px;
+    height: 95px;
+}
+.header_word
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 30px;
+}
+.header_word_title
+{
+    font-size: 46px;
+}
+.header_word_supplement
+{
+    font-size: 13px;
+}
+
+/*dividing_line*/
+.dividing_line
+{
+    width: 905px;
+    height: 1px;
+    margin: 25px 0;
+    background-color: white;
+}
+
+/*navi*/
+.navi
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navi_SCP_series
+{
+    border: white 1px solid;
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+.navi_SCP_series li
+{
+    position: relative;
+    white-space: nowrap;
+    border-right: white 1px solid;
+}
+.navi_SCP_series > li:last-child
+{
+    border-right: none;
+}
+.navi_SCP_series > li
+{
+    float: left;
+}
+.navi_SCP_series a
+{
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+.navi_SCP_series a:hover
+{
+    background-color: white;
+    color: gray;
+}
+.navi_SCP_series li:hover > a
+{
+    background-color: white;
+    color: gray;
+}
+.navi_SCP_series ul
+{
+    border: white 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 100px;
+}
+.navi_SCP_series ul li
+{
+    border-bottom: white 1px solid;
+}
+.navi_SCP_series ul
+{
+    display: none;
+}
+.navi_SCP_series li:hover > ul
+{
+    display: block;
+}
